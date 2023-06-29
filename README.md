@@ -23,8 +23,8 @@
 
 
 # Installation
-To use this code, you need to have Python >=3.6 installed along with the required dependencies. Follow these steps to install and set up the environment:
+To use this code, you need to have Python >=3.6 installed along with the required dependencies. sklearn-learn and optuna are required, but I have made xgboost and catboost optional. Follow these steps to install and set up the environment:
 
-Clone this repository: git clone https://github.com/ashaya23/TriMe
-Change to the project directory: cd redis-filemem-cache
-Run setup.py script : python setup.py install
+1. Clone this repository: git clone https://github.com/ashaya23/TriMe
+2. Change to the project directory: cd redis-filemem-cache
+3. Run setup.py script : python setup.py install
