@@ -1,15 +1,27 @@
 #coding=utf-8
-from setuptools import setup, find_packages
+from setuptools import setup
+
+REQUIRED_PACKAGES = [
+    'scikit-learn',
+    'optuna',
+]
+
+OPTIONAL_PACKAGES = {
+    'xgboost': ['xgboost'],
+    'catboost': ['catboost'],
+}
 
 setup(
-    name='redis_filemem_cache',
+    name='TriMe',
     version='0.1.0',
     author='ashaya',
     author_email='',
-    description='Redis and File cache for storing functions indexed by datetime',
+    description='Tree based Multiple Imputation',
     url="https://github.com/ashaya23/redis-filemem-cache",
     python_requires='>=3.6',
-    packages=['filememcache'],
+    packages=['trime'],
+    install_requires=REQUIRED_PACKAGES,
+    extras_require=OPTIONAL_PACKAGES,
     install_requires=[line.strip() for line in openf("requirements.txt") if line.strip()],
     classifiers=[
         'Topic :: Utilities',
