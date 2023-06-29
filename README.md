@@ -20,3 +20,11 @@
 
  The name of the package, TrIMe is a playful anagram of TREe Multiple Imputation.
  The API of the library is consistent with the scikit-learn
+
+
+# Installation
+To use this code, you need to have Python >=3.6 installed along with the required dependencies. Follow these steps to install and set up the environment:
+
+Clone this repository: git clone https://github.com/ashaya23/TriMe
+Change to the project directory: cd redis-filemem-cache
+Run setup.py script : python setup.py install
